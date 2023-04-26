@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/rujanvet/static/css/main.211233fe.css",
+    "main.js": "/rujanvet/static/js/main.1ff27ef2.js",
+    "static/js/787.6aa7e856.chunk.js": "/rujanvet/static/js/787.6aa7e856.chunk.js",
+    "static/media/banner_desktop.jpg": "/rujanvet/static/media/banner_desktop.11e531a6ef00fa851c10.jpg",
+    "static/media/banner_mobil.jpg": "/rujanvet/static/media/banner_mobil.de6d3af3ff6e39a00e1e.jpg",
+    "static/media/logo-inverted.png": "/rujanvet/static/media/logo-inverted.9840b7aa708477e61eab.png",
+    "static/media/logo.png": "/rujanvet/static/media/logo.d3adff1108f74a9b0459.png",
+    "index.html": "/rujanvet/index.html",
+    "main.211233fe.css.map": "/rujanvet/static/css/main.211233fe.css.map",
+    "main.1ff27ef2.js.map": "/rujanvet/static/js/main.1ff27ef2.js.map",
+    "787.6aa7e856.chunk.js.map": "/rujanvet/static/js/787.6aa7e856.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.211233fe.css",
+    "static/js/main.1ff27ef2.js"
+  ]
+}
