@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/rujanvet/static/css/main.ec1bdcb9.css",
-    "main.js": "/rujanvet/static/js/main.658a0b37.js",
-    "static/js/787.6aa7e856.chunk.js": "/rujanvet/static/js/787.6aa7e856.chunk.js",
-    "static/media/banner_desktop.jpg": "/rujanvet/static/media/banner_desktop.11e531a6ef00fa851c10.jpg",
-    "static/media/banner_mobil.jpg": "/rujanvet/static/media/banner_mobil.de6d3af3ff6e39a00e1e.jpg",
-    "static/media/logo-inverted.png": "/rujanvet/static/media/logo-inverted.9840b7aa708477e61eab.png",
-    "static/media/logo.png": "/rujanvet/static/media/logo.d3adff1108f74a9b0459.png",
-    "index.html": "/rujanvet/index.html",
-    "main.ec1bdcb9.css.map": "/rujanvet/static/css/main.ec1bdcb9.css.map",
-    "main.658a0b37.js.map": "/rujanvet/static/js/main.658a0b37.js.map",
-    "787.6aa7e856.chunk.js.map": "/rujanvet/static/js/787.6aa7e856.chunk.js.map"
+    "main.css": "/static/css/main.f020cfa5.css",
+    "main.js": "/static/js/main.8a5ffe95.js",
+    "static/js/787.6aa7e856.chunk.js": "/static/js/787.6aa7e856.chunk.js",
+    "static/media/logo-inverted.png": "/static/media/logo-inverted.9840b7aa708477e61eab.png",
+    "static/media/logo.png": "/static/media/logo.d3adff1108f74a9b0459.png",
+    "index.html": "/index.html",
+    "main.f020cfa5.css.map": "/static/css/main.f020cfa5.css.map",
+    "main.8a5ffe95.js.map": "/static/js/main.8a5ffe95.js.map",
+    "787.6aa7e856.chunk.js.map": "/static/js/787.6aa7e856.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec1bdcb9.css",
-    "static/js/main.658a0b37.js"
+    "static/css/main.f020cfa5.css",
+    "static/js/main.8a5ffe95.js"
   ]
 }

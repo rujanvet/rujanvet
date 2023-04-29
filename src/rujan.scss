@@ -7,6 +7,7 @@ $black-olive: #353531ff;
 
 $font-familyCursive: 'Comfortaa', cursive;
 $font-familySans: 'Open Sans', sans-serif;
+$background: #ebebeb;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,254 +23,284 @@ a {
 p {
   margin-bottom: 15px;
 }
-.banner img{
+
+.banner img {
   width: 100%;
   height: auto;
+  padding-bottom: 30px;
 }
-img.logo{
+
+img.logo {
   width: auto;
 }
+
 body {
-  background: #ebebeb;
+  background: $background;
   //overflow-x: hidden;
   color: $black-olive;
 
-  .header {
-    color: white;
-    background: $chrysler-blue;
-    font-family: $font-familyCursive;
-    padding: 15px 0;
-    font-weight: 700;
-    border-bottom: 2px solid $celestial-blue;
+  .RujanVet {
 
-    &.header-scrolled {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #ebebeb;
-      z-index: 9;
+    h1:not(.swot) {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 60px;
       color: $chrysler-blue;
+      font-family: $font-familySans;
+      text-align: center;
     }
 
-    .menuItem {
-      font-family: $font-familyCursive;
-    }
-  }
-
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    a {
+    h2 {
       font-size: 28px;
       font-weight: 700;
-    }
-
-    span {
-      font-size: 12px;
-      font-weight: 500;
-    }
-  }
-
-  .banner, img {
-    max-width: 100%;
-  }
-
-  .badges {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    .badge {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-
-      svg {
-        margin-right: 10px;
-      }
-
-      .swot {
-        font-size: 18px;
-        font-weight: 700;
-        display: inline;
-        text-transform: uppercase;
-      }
-    }
-  }
-
-  h1:not(.swot) {
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    color: $chrysler-blue;
-    font-family: $font-familySans;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: $chrysler-blue;
-    font-family: $font-familySans;
-    margin-top: 15px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: $chrysler-blue;
-    font-family: $font-familySans;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 30px;
-  }
-
-  .Collapsible {
-    border: 1px solid $celestial-blue;
-    border-radius: 5px;
-    margin: 15px 0;
-
-    &__trigger {
-      text-align: center;
-      font-weight: 700;
-      width: 100%;
-      display: inline-block;
-      padding: 10px 0;
-
-      &.is-closed {
-        background: $chrysler-blue;
-        color: #ebebeb;
-      }
-
-      &.is-open {
-        background: $celestial-blue;
-        color: #ebebeb;
-      }
-    }
-
-    .MuiTableCell-body {
+      margin-bottom: 30px;
+      color: $chrysler-blue;
       font-family: $font-familySans;
-      font-weight: 600;
-    }
-  }
-
-  .separator {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 60px 0;
-
-    > * {
-      flex-grow: 1;
-      min-height: 1px;
-      background: $celestial-blue;
-    }
-
-    &-text {
-      flex: 0 0 40px;
-      background: transparent;
+      margin-top: 15px;
       text-align: center;
     }
-  }
 
-  .review {
-    &__head {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 15px;
-    }
-    &__item{
-      padding: 0 60px 30px;
-
-    }
-    &__stars{
-      margin-bottom: 15px;
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: $chrysler-blue;
+      font-family: $font-familySans;
       text-align: center;
-      .star{
-        color: #fbbc04;
-        font-size: 24px;
-      }
+      margin-top: 15px;
+      margin-bottom: 30px;
     }
-    &__text{
-      max-width: 600px;
-      margin: 0 auto;
-      display: block;
-    }
-
-    &__author {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 15px;
-
-      &_name {
-        font-size: 18px;
-        color: $chrysler-blue;
-      }
-      span{
-        font-size: 12px;
-        align-self: flex-start;
-      }
-    }
-  }
-
-  footer {
-    padding-top: 30px;
-    background: $chrysler-blue;
-    color: white;
 
     h4 {
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      padding-top: 15px;
-      margin-bottom: 30px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid $celestial-blue;
+      font-size: 16px;
+      font-weight: 700;
+      color: $chrysler-blue;
+      font-family: $font-familySans;
+      text-align: center;
     }
 
-    svg {
-      padding-right: 10px;
-    }
-
-    a {
-      color: white !important;
-      text-decoration: none !important;
-      display: block;
-      clear: both;
-
-    }
-  }
-
-  .splide{
-    &__pagination__page{
+    .header {
+      color: white;
       background: $chrysler-blue;
-      &.is-active{
+      font-family: $font-familyCursive;
+      padding: 15px 0;
+      font-weight: 700;
+      border-bottom: 2px solid $celestial-blue;
+
+      &.header-scrolled {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: $background;
+        z-index: 9;
+        color: $chrysler-blue;
+      }
+
+      .menuItem {
+        font-family: $font-familyCursive;
+      }
+    }
+
+
+    .banner, img {
+      max-width: 100%;
+    }
+
+    .badges {
+
+      .badge {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        .swot {
+          font-size: 18px;
+          font-weight: 700;
+          display: inline;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      a {
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    .tarife {
+      padding: 60px 0;
+      background: $chrysler-blue;
+
+      h3 {
+        margin-top: 0;
+        color: $background;
+      }
+      .MuiTypography-caption{
+        color: $background;
+        font-family: $font-familySans;
+      }
+    }
+
+    .separator {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      > * {
+        flex-grow: 1;
+        min-height: 1px;
         background: $celestial-blue;
+      }
+
+      &-text {
+        flex: 0 0 40px;
+        background: transparent;
+        text-align: center;
+      }
+    }
+
+    .review {
+      &__head {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      &__item {
+        padding: 0 60px 30px;
+
+      }
+
+      &__stars {
+        margin-bottom: 15px;
+        text-align: center;
+
+        .star {
+          color: #fbbc04;
+          font-size: 24px;
+        }
+      }
+
+      &__text {
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      &__author {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+
+        &_name {
+          font-size: 18px;
+          color: $chrysler-blue;
+        }
+
+        span {
+          font-size: 12px;
+          align-self: flex-start;
+        }
+      }
+    }
+
+    footer {
+      padding-top: 30px;
+      background: $chrysler-blue;
+      color: white;
+
+      h4 {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $celestial-blue;
+        color: white;
+      }
+
+
+      svg {
+        padding-right: 10px;
+      }
+
+      a {
+        color: white !important;
+        text-decoration: none !important;
+        display: block;
+        clear: both;
+
+      }
+    }
+
+    .splide {
+      &__pagination__page {
+        background: $chrysler-blue;
+
+        &.is-active {
+          background: $celestial-blue;
+        }
       }
     }
   }
 }
 
 @media (max-width: 767px) {
+  .hidden-mobile{
+    display: none !important;
+  }
+  .menu{
+    margin-top: 10px;
+  }
+
   picture.banner {
     display: block;
     min-height: 100vw;
   }
+
+  .separator {
+    margin: 30px 0;
+  }
+  .footer-separator {
+    clear: both;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
+  .banner .img{
+    margin-bottom: 60px;
+  }
+  .contacts-menu{
+    display: none !important;
+  }
   picture.banner {
     display: block;
-    min-height: calc(100vw * (5/16));
+    min-height: calc(100vw * (5 / 16));
+  }
+  .separator {
+    margin: 60px 0;
   }
 }

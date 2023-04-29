@@ -18,6 +18,12 @@ const HeaderMenu = (logos) => {
                 behavior: "smooth"
             });
         }
+        else{
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
     };
     const handleScroll = () => {
         if (window.pageYOffset >= 115) {
@@ -38,14 +44,18 @@ const HeaderMenu = (logos) => {
                 <Grid container spacing={0} justifyContent="center" alignItems="center">
                     <Grid item xs={4}>
                         <Item>
-                            <img height="80px" width="283px" src={headerData.logo} alt="logo" style={{maxHeight: 80}} className={"logo"}/>
+                            <img onClick={handleClickScroll} height="80px" width="283px" src={headerData.logo} alt="logo" style={{maxHeight: 80}} className={"logo"}/>
                         </Item>
                     </Grid>
-                    <Grid item xs={4}>
-                        <Grid container
+                    <Grid item xs={8} md={4}>
+                        <Item className={"contacts contacts-menu"}>
+                            <a href="tel:0723395545" className="link link-phone">0723395545</a>
+                        </Item>
+                        <Grid container="true"
                               direction="row"
-                              justifyContent="center"
-                              alignItems="center" spacing={3}>
+                              justifyContent="space-between"
+                              className={"menu"}
+                              alignItems="center" spacing={0}>
                             <Grid item>
                                 <Item><span  className="menuItem" data-section="acasa" onClick={handleClickScroll}>Acasa</span></Item>
                             </Grid>
@@ -56,8 +66,9 @@ const HeaderMenu = (logos) => {
                                 <Item><span  data-section="contact" className="menuItem" onClick={handleClickScroll}>Contact</span></Item>
                             </Grid>
                         </Grid>
+
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} md={4} className='hidden-mobile'>
                         <Item className={"contacts"}>
                             <a href="tel:0723395545" className="link link-phone">0723395545</a>
                             <span className="link link-schedule">Luni - Sambata: 09:30 – 18:00</span>
