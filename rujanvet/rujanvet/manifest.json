@@ -1,0 +1,20 @@
+{
+  "short_name": "RujanVet",
+  "name": "RujanVet - Clinica veterinara",
+  "icons": [
+    {
+      "src": "logo-small.png",
+      "type": "image/png",
+      "sizes": "192x19264x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4824bcff",
+  "background_color": "#ebebeb"
+}
