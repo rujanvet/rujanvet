@@ -31,9 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postdeploy": "git add . && git commit -m 'deploy' && git push origin main",
-    "testDeploy": "gh-pages -d build -dest build/rujanvet"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

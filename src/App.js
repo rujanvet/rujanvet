@@ -1,13 +1,8 @@
-import PetsIcon from '@mui/icons-material/Pets';
-import VaccinesIcon from '@mui/icons-material/Vaccines';
-import ContentCutIcon from '@mui/icons-material/ContentCut';
-import BiotechIcon from '@mui/icons-material/Biotech';
-import MasksIcon from '@mui/icons-material/Masks';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import './App.css';
 import {Container, Link} from "@mui/material";
-import logo from './static/logos/logo.png';
+import logo from './static/logos/logo.webp';
 import logoSmall from './static/logos/logo-small.webp';
 import logoInverted from './static/logos/logo-inverted.webp';
 import logoInvertedSmall from './static/logos/logo-small-inverted.webp';
