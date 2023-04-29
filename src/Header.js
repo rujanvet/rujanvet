@@ -6,11 +6,10 @@ import Item from "@mui/material/Grid";
 const HeaderMenu = (logos) => {
     const [headerData, currentData] = useState({"logo": (window.innerWidth > 768) ? logos.logoInverted : logos.logoInvertedSmall, "class": "header"});
     const handleClickScroll = (data) => {
-        debugger;
         const element = document.getElementById(data.target.dataset.section);
         if (element) {
             // 👇 Will scroll smoothly to the top of the next section
-            var headerOffset = 115;
+            var headerOffset = 145;
             var elementPosition = element.getBoundingClientRect().top;
             var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -20,8 +19,6 @@ const HeaderMenu = (logos) => {
             });
         }
     };
-
-
     const handleScroll = () => {
         if (window.pageYOffset >= 115) {
             currentData({"logo": (window.innerWidth > 768) ? logos.logo : logos.logoSmall, "class": "header header-scrolled"});
@@ -41,7 +38,7 @@ const HeaderMenu = (logos) => {
                 <Grid container spacing={0} justifyContent="center" alignItems="center">
                     <Grid item xs={4}>
                         <Item>
-                            <img src={headerData.logo} alt="logo" style={{maxHeight: 80}} className={"logo"}/>
+                            <img height="80px" width="283px" src={headerData.logo} alt="logo" style={{maxHeight: 80}} className={"logo"}/>
                         </Item>
                     </Grid>
                     <Grid item xs={4}>
@@ -53,7 +50,7 @@ const HeaderMenu = (logos) => {
                                 <Item><span  className="menuItem" data-section="acasa" onClick={handleClickScroll}>Acasa</span></Item>
                             </Grid>
                             <Grid item>
-                                <Item><span data-section="preturi" className="menuItem" onClick={handleClickScroll}>Preturi</span></Item>
+                                <Item><span data-section="tarife" className="menuItem" onClick={handleClickScroll}>Tarife</span></Item>
                             </Grid>
                             <Grid item>
                                 <Item><span  data-section="contact" className="menuItem" onClick={handleClickScroll}>Contact</span></Item>
@@ -62,8 +59,9 @@ const HeaderMenu = (logos) => {
                     </Grid>
                     <Grid item xs={4}>
                         <Item className={"contacts"}>
-                            <a href="tel:0722333444" className="link link-phone">0722333444</a>
-                            <span className="link link-schedule">Luni - Vineri: 09:00 - 17:00</span>
+                            <a href="tel:0723395545" className="link link-phone">0723395545</a>
+                            <span className="link link-schedule">Luni - Sambata: 09:30 – 18:00</span>
+                            <span className="link link-schedule">Duminica: 11:00 – 14:00</span>
                         </Item>
                     </Grid>
                 </Grid>

@@ -19,8 +19,15 @@ a {
   color: inherit;
 }
 
-p{
+p {
   margin-bottom: 15px;
+}
+.banner img{
+  width: 100%;
+  height: auto;
+}
+img.logo{
+  width: auto;
 }
 body {
   background: #ebebeb;
@@ -40,6 +47,7 @@ body {
       top: 0;
       width: 100%;
       background: #ebebeb;
+      z-index: 9;
       color: $chrysler-blue;
     }
 
@@ -95,9 +103,11 @@ body {
   h1:not(.swot) {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     color: $chrysler-blue;
-    font-family: $font-familyCursive;
+    font-family: $font-familySans;
+    text-align: center;
   }
 
   h2 {
@@ -105,7 +115,20 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
     color: $chrysler-blue;
-    font-family: $font-familyCursive;
+    font-family: $font-familySans;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: $chrysler-blue;
+    font-family: $font-familySans;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 
   .Collapsible {
@@ -119,43 +142,134 @@ body {
       width: 100%;
       display: inline-block;
       padding: 10px 0;
-      &.is-closed{
-        background:$chrysler-blue;
+
+      &.is-closed {
+        background: $chrysler-blue;
         color: #ebebeb;
       }
-        &.is-open{
-            background:$celestial-blue;
-            color: #ebebeb;
-        }
+
+      &.is-open {
+        background: $celestial-blue;
+        color: #ebebeb;
+      }
     }
-    .MuiTableCell-body{
+
+    .MuiTableCell-body {
       font-family: $font-familySans;
       font-weight: 600;
     }
   }
 
-  .separator{
+  .separator {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    >* {
+    margin: 60px 0;
+
+    > * {
       flex-grow: 1;
       min-height: 1px;
       background: $celestial-blue;
     }
-    &-text{
+
+    &-text {
       flex: 0 0 40px;
       background: transparent;
       text-align: center;
     }
   }
+
+  .review {
+    &__head {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    &__item{
+      padding: 0 60px 30px;
+
+    }
+    &__stars{
+      margin-bottom: 15px;
+      text-align: center;
+      .star{
+        color: #fbbc04;
+        font-size: 24px;
+      }
+    }
+    &__text{
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__author {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+
+      &_name {
+        font-size: 18px;
+        color: $chrysler-blue;
+      }
+      span{
+        font-size: 12px;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 30px;
+    background: $chrysler-blue;
+    color: white;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      padding-top: 15px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $celestial-blue;
+    }
+
+    svg {
+      padding-right: 10px;
+    }
+
+    a {
+      color: white !important;
+      text-decoration: none !important;
+      display: block;
+      clear: both;
+
+    }
+  }
+
+  .splide{
+    &__pagination__page{
+      background: $chrysler-blue;
+      &.is-active{
+        background: $celestial-blue;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
+  picture.banner {
+    display: block;
+    min-height: 100vw;
+  }
 }
 
 @media (min-width: 768px) {
-
+  picture.banner {
+    display: block;
+    min-height: calc(100vw * (5/16));
+  }
 }
