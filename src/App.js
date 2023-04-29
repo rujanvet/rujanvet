@@ -8,9 +8,9 @@ import Item from '@mui/material/Grid';
 import './App.css';
 import {Container, Link} from "@mui/material";
 import logo from './static/logos/logo.png';
-import logoSmall from './static/logos/logo-small.png';
-import logoInverted from './static/logos/logo-inverted.png';
-import logoInvertedSmall from './static/logos/logo-small-inverted.png';
+import logoSmall from './static/logos/logo-small.webp';
+import logoInverted from './static/logos/logo-inverted.webp';
+import logoInvertedSmall from './static/logos/logo-small-inverted.webp';
 import Header from "./Header";
 import {Info, LocalHospital, Phone, PunchClock} from "@mui/icons-material";
 import GoogleReviews from "./GoogleReviews";
@@ -142,9 +142,9 @@ function App() {
             <Header logo={logo} logoInverted={logoInverted} logoSmall={logoSmall} logoInvertedSmall={logoInvertedSmall}/>
 
             <picture className={"banner"}>
-                <source srcSet={`${process.env.PUBLIC_URL}/images/img_mobil.jpg`} media="(orientation: portrait)"/>
-                <source srcSet={`${process.env.PUBLIC_URL}/images/img_desktop.jpg`} media="(orientation: landscape)"/>
-                <img width="1903px" height="595px" src={`${process.env.PUBLIC_URL}/images/img_desktop.jpg`} alt="imagine reprezentativa cu banner"/>
+                <source srcSet={`${process.env.PUBLIC_URL}/images/img_mobil.webp`} media="(orientation: portrait)"/>
+                <source srcSet={`${process.env.PUBLIC_URL}/images/img_desktop.webp`} media="(orientation: landscape)"/>
+                <img width="1903px" height="595px" src={`${process.env.PUBLIC_URL}/images/img_desktop.webp`} alt="imagine reprezentativa cu banner"/>
             </picture>
 
             <Container maxWidth="lg">

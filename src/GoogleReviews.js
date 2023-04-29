@@ -56,7 +56,7 @@ const GoogleReviews = ({placeId, apiKey}) => {
                 <div key={review.time} className={"review__item"}>
                     {/*<a href={review.author_url}>*/}
                         <div className={"review__head"}>
-                            <img className={"review__author_pic"} src={`https://corsproxy.io/?` + encodeURIComponent(review.profile_photo_url)} alt={review.author_name} width="50px" height="50px"/>
+                            <img className={"review__author_pic"} loading='lazy' src={`https://corsproxy.io/?` + encodeURIComponent(review.profile_photo_url)} alt={review.author_name} width="50px" height="50px"/>
                             <div className={"review__author"}>
                                 <h5 className={"review__author_name"}>{review.author_name}</h5>
                                 <span>{review.relative_time_description}</span>
