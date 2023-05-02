@@ -37,22 +37,9 @@ const Footer = () => (
                 <Grid xs={12} md={2} item>
                     <Item>
                         <h4><PunchClock fontSize="large"/> Program</h4>
-                        <table itemProp="openingHours">
-                            <tbody>
-                            <tr>
-                                <th className="x2TOCf">Luni-Vineri</th>
-                                <td className="o0m3Qb"><span className="WF8WNe">09:30–18:00</span></td>
-                            </tr>
-                            <tr>
-                                <th className="x2TOCf">Sâmbata</th>
-                                <td className="o0m3Qb"><span className="WF8WNe">09:30–18:00</span></td>
-                            </tr>
-                            <tr>
-                                <th className="x2TOCf">Duminica</th>
-                                <td className="o0m3Qb"><span className="WF8WNe">11:00–14:00</span></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <p>Luni-Vineri: &nbsp;09:30–18:00</p>
+                        <p>Sâmbata:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:30–18:00</p>
+                        <p>Duminica:&nbsp;&nbsp; &nbsp;11:00–14:00</p>
                     </Item>
                 </Grid>
                 <Grid xs={12} md={2} item>
