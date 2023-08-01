@@ -1,9 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import {Star} from "@mui/icons-material";
 
 const GoogleReviews = ({placeId, apiKey}) => {
     const [reviews, setReviews] = useState([]);
+    const [rating, setRating] = useState(0);
+    const [reviewsCount, setReviewsCount] = useState(0);
+
 
     useEffect(() => {
         const cacheKey = `google-reviews-${placeId}`;
@@ -13,13 +17,17 @@ const GoogleReviews = ({placeId, apiKey}) => {
         const fetchReviews = async () => {
             try {
                 // http://cors.io/?https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&language=ro&key=${apiKey}`
-                const response = await fetch(`https://corsproxy.io/?` + encodeURIComponent(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&language=ro&key=${apiKey}`));
+                const response = await fetch(`https://corsproxy.io/?` + encodeURIComponent(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,user_ratings_total,reviews&language=ro&key=${apiKey}`));
                 const json = await response.json();
                 const fetchedReviews = json.result.reviews;
+                const fetchedReviewsCount = json.result.user_ratings_total;
+                const fetchedRating = json.result.rating;
                 setReviews(fetchedReviews);
+                setReviewsCount(fetchedReviewsCount);
+                setRating(fetchedRating);
 
                 // Cache the response
-                const cacheData = {timestamp: Date.now(), reviews: fetchedReviews};
+                const cacheData = {timestamp: Date.now(), reviews: fetchedReviews, reviewsCount: fetchedReviewsCount, rating: fetchedRating};
                 localStorage.setItem(cacheKey, JSON.stringify(cacheData));
             } catch (error) {
                 console.error('Failed to fetch reviews', error);
@@ -29,6 +37,8 @@ const GoogleReviews = ({placeId, apiKey}) => {
         if (cachedData && cachedData.timestamp + cacheExpiration > Date.now()) {
             // Use cached data if it's less than 30 days old
             setReviews(cachedData.reviews);
+            setReviewsCount(cachedData.reviewsCount);
+            setRating(cachedData.rating);
         } else {
             // Fetch new data if there's no cached data or it's expired
             fetchReviews();
@@ -48,7 +58,8 @@ const GoogleReviews = ({placeId, apiKey}) => {
     };
     return (
         <div>
-            <h3>Recenzii clienti</h3>
+            <h3>{reviewsCount} recenzii clienti - <strong>{rating}<Star htmlColor={"#fbbc04"}></Star></strong> </h3>
+
             <Splide options={ { rewind: true, autoplay:true, pauseOnHover:true } } aria-label="slider with reviews">
 
             {reviews.map((review) => (

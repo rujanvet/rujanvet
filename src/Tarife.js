@@ -76,9 +76,9 @@ export default function Tarife() {
                                                     <TableCell component="th" scope="row">
                                                         <Typography variant="strong">{service.Name}</Typography>
                                                     </TableCell>
-                                                    <TableCell align="right">
-                                                        {(service.Price) ? service.Price + " lei": "Prețul se stabilește în funcție de caz"}
-                                                    </TableCell>
+                                                    {/*<TableCell align="right">*/}
+                                                    {/*    {(service.Price) ? service.Price + " lei": "Prețul se stabilește în funcție de caz"}*/}
+                                                    {/*</TableCell>*/}
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -92,7 +92,7 @@ export default function Tarife() {
                 <CircularProgress/>
             )}
             <Typography variant="caption">
-                *Prețurile sunt actualizate la data de {localStorage.getItem('clinicUpdatedAt')}. Acestea pot varia în funcție de fiecare caz în parte. Vă rugăm să ne contactați pentru mai multe informații.
+                *Informatiile sunt actualizate la data de {localStorage.getItem('clinicUpdatedAt')}. Acestea pot varia în funcție de fiecare caz în parte. Vă rugăm să ne contactați pentru mai multe informații.
             </Typography>
         </div>
     );
