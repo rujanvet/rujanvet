@@ -90,7 +90,7 @@ const Acasa = () => (
 );
 const Preturi = () => (
     <div className="preturi" itemID={'preturi'} id="tarife" style={{marginBottom: 30}}>
-        <h3 className="title">Tarife</h3>
+        <h3 className="title">Servicii</h3>
         <Tarife/>
     </div>
 

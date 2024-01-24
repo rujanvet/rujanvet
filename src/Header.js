@@ -60,7 +60,7 @@ const HeaderMenu = (logos) => {
                                 <Item><span  className="menuItem" data-section="acasa" onClick={handleClickScroll}>Acasa</span></Item>
                             </Grid>
                             <Grid item>
-                                <Item><span data-section="tarife" className="menuItem" onClick={handleClickScroll}>Tarife</span></Item>
+                                <Item><span data-section="tarife" className="menuItem" onClick={handleClickScroll}>Servicii</span></Item>
                             </Grid>
                             <Grid item>
                                 <Item><span  data-section="contact" className="menuItem" onClick={handleClickScroll}>Contact</span></Item>
